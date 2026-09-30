@@ -1,0 +1,7 @@
+CREATE TABLE employees (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ employee_id VARCHAR(40) UNIQUE NOT NULL, name VARCHAR(120) NOT NULL,
+ designation VARCHAR(120), department VARCHAR(80), salary DECIMAL(12,2) DEFAULT 0,
+ phone VARCHAR(30), join_date DATE NULL, status VARCHAR(30) DEFAULT 'Active',
+ created_at TIMESTAMP NULL, updated_at TIMESTAMP NULL
+);
