@@ -1,0 +1,6 @@
+CREATE TABLE users (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ name VARCHAR(120) NOT NULL, username VARCHAR(80) UNIQUE NOT NULL,
+ password VARCHAR(255) NOT NULL, role ENUM('admin','employee','buyer') NOT NULL,
+ designation VARCHAR(120) NULL, api_token CHAR(64) NULL, created_at TIMESTAMP NULL, updated_at TIMESTAMP NULL
+);
